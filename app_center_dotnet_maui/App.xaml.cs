@@ -1,5 +1,8 @@
-﻿using Microsoft.Extensions.Logging;
-using System.Diagnostics.CodeAnalysis;
+﻿using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Distribute;
+
 
 namespace app_center_dotnet_maui
 {
@@ -17,8 +20,7 @@ namespace app_center_dotnet_maui
             SetupMsAppCenter();
         }
 
-        // ReD BROG: 24.04.2022 analytic and macos are given words
-        [SuppressMessage("ReSharper", "CommentTypo")]
+
         protected void SetupMsAppCenter()
         {
             
