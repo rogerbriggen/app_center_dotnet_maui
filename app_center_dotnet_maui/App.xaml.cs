@@ -30,8 +30,7 @@ namespace app_center_dotnet_maui
 #if ANDROID
             Distribute.SetEnabledForDebuggableBuild(false); //Disable the distribute check for Debug since it is annyoing.. only for Android available
 #endif
-            AppCenter.Start(AppCenterCredentials.GetAppCenterCredentials(),
-                typeof(Analytics), typeof(Crashes));
+            AppCenter.Start(AppCenterCredentials.GetAppCenterCredentials(), typeof(Analytics), typeof(Crashes));
             
         }
     }
